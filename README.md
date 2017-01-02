@@ -1,18 +1,20 @@
 # Object Oriented Programming in JavaScript
 
 ##Contents
-- [Purpose](#Purpose)
-- [Introduction](#Introduction)
-- [Contributing](#Contributing)
-- [OOP Recipes](#OOP Recipes)
-  - [ES6 Class Example](#ES6 Class Example)
+- [Purpose](#purpose)
+- [Introduction](#introduction)
+- [Contributing](#contributing)
+- [OOP Recipes](#ooprecipes)
+  - [ES6 Class Example](#es6classexample)
 
+<a name="purpose"/>
 ##Purpose
 The intent of this project is to create a set of reference recipes for specific
 object oriented needs. Like a cookbook this will show how to implement these in
 Javascript, but each recipe will also be accompanied by a list of pros, cons,
 and commentary about the technique.
 
+<a name="introduction"/>
 ##Introduction
 Object oriented programming (OOP) techniques are a valuable part of any
 programmers tool kit. [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)
@@ -40,6 +42,7 @@ abstraction is like a six foot person trying to cover up with a five foot long
 blanket - something is going to stick out. This means that understanding
 Javascripts' prototypal inheritance is time well spent.
 
+<a name="contributing"/>
 ##Contributing
 
 This is an "open source" reference and as such your contributions are welcomed
@@ -53,8 +56,10 @@ maintain consistency and more importantly, will make it easier to compare and
 contrast competing recipes.
 3. Be nice and keep it professional!
 
+<a name="ooprecipes"/>
 ##OOP Recipes
 ---
+<a name="es6classexample"/>
 ###ES6 Class Example
 ####Javascript
 ```javascript
