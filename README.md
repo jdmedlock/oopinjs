@@ -86,6 +86,26 @@ class NewYear extends LastYear {
 }
 var newYear = new NewYear("John","Jane");
 //////////////////////
+// Classless OOP same as above, without classes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+function Last_year(){
+  // code
+}
+Last_year.prototype.greetMore = function(){
+  console.log("hello "+this.x+"!!")
+}
+
+function New_year(x,y){
+  this.x = x;
+  this.y = y;
+}
+New_year.prototype = Object.create( Last_year.prototype );
+
+New_year.prototype.greet = function(){
+  console.log("yo "+this.y+"!!");
+}
+var newYear2 = new New_year("John","Jane");
+/////////////////////
 // Kyle Simpson Object Linking Other Objects(OLOO) style
 // https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes
 // chapter 4 and 5
@@ -101,8 +121,15 @@ NewYear1.greet = function(){
   console.log("yo "+this.y);
 }
 /////
+// ES6 class
 newYear.greetMore();
+newYear.greet();
+// OOP without classes
+newYear2.greetMore();
+newYear2.greet();
+// OLOO programming
 NewYear1.greetMore();
+NewYear1.greet();
 ```
 ####Pros/cons
 | Pros                             | Cons                                |
@@ -113,6 +140,6 @@ NewYear1.greetMore();
 
 ####Commentary
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr)
-2. Thanks to @kornil for providing this example.
+2. Thanks to <a href="https://github.com/Kornil">@kornil</a> for providing this example.
 
 ---
