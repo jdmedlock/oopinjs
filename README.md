@@ -105,9 +105,9 @@ NewYear1.greetMore();
 ####Pros/cons
 | Pros                             | Cons                                |
 |----------------------------------|-------------------------------------|
-| Clear and concise code           | In ES6 Class is a leaky abstraction |
-|                                  | which uses ES5-style prototypal     |
-|                                  | inheritance.                        |
+| Clear and concise code           | In ES6 Class is a leaky abstraction which uses ES5-style prototypal inheritance  |
+|                                  |                                     |
+
 
 ####Commentary
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr)
