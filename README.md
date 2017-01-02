@@ -1,10 +1,10 @@
 # Object Oriented Programming in JavaScript
 
 ##Contents
-- [Purpose]
-- [Introduction]
-- [Contributing]
-- [OOP Recipes]
+- [Purpose](#Purpose)
+- [Introduction](#Introduction)
+- [Contributing](#Contributing)
+- [OOP Recipes](#OOP Recipes)
 
 ##Purpose
 The intent of this project is to create a set of reference recipes for specific
