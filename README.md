@@ -1,11 +1,11 @@
 # Object Oriented Programming in JavaScript
 
 ##Contents
-- [Purpose](##Purpose)
-- [Introduction](##Introduction)
-- [Contributing](##Contributing)
-- [OOP Recipes](##OOP Recipes)
-  - [ES6 Class Example](###ES6 Class Example)
+- [Purpose](Purpose)
+- [Introduction](Introduction)
+- [Contributing](ontributing)
+- [OOP Recipes](OOP Recipes)
+  - [ES6 Class Example](ES6 Class Example)
 
 ##Purpose
 The intent of this project is to create a set of reference recipes for specific
