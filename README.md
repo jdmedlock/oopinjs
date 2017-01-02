@@ -54,7 +54,9 @@ make qualitative  in addition to quantitative observations.
 2. Tailor the code snippet in the first recipe for any new recipes. This will
 maintain consistency and more importantly, will make it easier to compare and
 contrast competing recipes.
-3. Be nice and keep it professional!
+3. Test your code before posting and include a link to the source in the
+*Commentary* section of the recipe.
+4. Be nice and keep it professional!
 
 <a name="ooprecipes"/>
 ##OOP Recipes
