@@ -1,10 +1,11 @@
 # Object Oriented Programming in JavaScript
 
 ##Contents
-- [Purpose](#Purpose)
-- [Introduction](#Introduction)
-- [Contributing](#Contributing)
-- [OOP Recipes](#OOP Recipes)
+- [Purpose](##Purpose)
+- [Introduction](##Introduction)
+- [Contributing](##Contributing)
+- [OOP Recipes](##OOP Recipes)
+  - [ES6 Class Example](###ES6 Class Example)
 
 ##Purpose
 The intent of this project is to create a set of reference recipes for specific
@@ -54,7 +55,7 @@ contrast competing recipes.
 
 ##OOP Recipes
 ---
-###ES6 Class Constructor
+###ES6 Class Example
 ####Javascript
 ```javascript
 'use strict'
