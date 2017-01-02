@@ -6,6 +6,7 @@
 - [Contributing](#contributing)
 - [OOP Recipes](#ooprecipes)
   - [ES6 Class Example](#es6classexample)
+  - [ES5 Singleton Example](#es5singletonexample)
 
 <a name="purpose"/>
 ##Purpose
@@ -142,7 +143,7 @@ NewYear1.greet();
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr)
 2. Thanks to <a href="https://github.com/Kornil">@kornil</a> for providing this example.
 ---
-<a name="es6classexample"/>
+<a name="es5singletonexample"/>
 ###ES5 Singleton Object Example
 ####Javascript
 ```javascript
