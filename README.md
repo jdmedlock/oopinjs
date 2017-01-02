@@ -56,7 +56,7 @@ contrast competing recipes.
 ---
 ###ES6 Class Constructor
 ####Javascript
-'''javascript
+```javascript
 'use strict'
 // ES6 class constructor style
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes
@@ -95,7 +95,7 @@ NewYear1.greet = function(){
 /////
 newYear.greetMore();
 NewYear1.greetMore();
-'''
+```
 ####Pros/cons
 | Pros                             | Cons                                |
 |----------------------------------|-------------------------------------|
