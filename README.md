@@ -192,7 +192,7 @@ console.log(newYear1.__proto__);
 
 
 ####Commentary
-1. The source code is [es5singleton.js[https://github.com/jdmedlock/oopinjs/blob/master/es5singleton.js]
+1. The source code is [es5singleton.js](https://github.com/jdmedlock/oopinjs/blob/master/es5singleton.js)
 in this repo.
 2. It is important to note that newYear1 uses the greetMore() function, but the
 data used is always from the referencing object. This is why the invocation on
