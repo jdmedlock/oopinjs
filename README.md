@@ -63,7 +63,9 @@ contrast competing recipes.
 
 <a name="ooprecipes"/>
 ##OOP Recipes
+
 ---
+
 <a name="es6classexample"/>
 ###ES6 Class Example
 ####Description
@@ -144,6 +146,7 @@ NewYear1.greet();
 ####Commentary
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
 2. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
+
 ---
 
 <a name="es5singletonexample"/>
@@ -206,6 +209,7 @@ the `lastYear1` object produces different results from that of the `newYear1`
 object.
 3. The `greetMore` function only exists in `LastYear`. `NewYear` references this
 method.
+
 ---
 
 <a name="es6singletonexample"/>
