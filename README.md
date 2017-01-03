@@ -145,6 +145,7 @@ NewYear1.greet();
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
 2. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
 ---
+
 <a name="es5singletonexample"/>
 ###ES5 Singleton Object Example
 ####Description
@@ -203,9 +204,10 @@ in this repo.
 data used is always from the referencing object. This is why the invocation on
 the `lastYear1` object produces different results from that of the `newYear1`
 object.
-3. The `greetMore` function only exists in `LastYear`. NewYear references this
+3. The `greetMore` function only exists in `LastYear`. `NewYear` references this
 method.
 ---
+
 <a name="es6singletonexample"/>
 ###ES6 Singleton Object Example
 ####Description
@@ -253,6 +255,7 @@ console.log(lastYear1.__proto__);
 console.log("newYear1 object = ", JSON.stringify(newYear1));
 console.log(newYear1.__proto__);
 ```
+
 ####Pros/cons
 | Pros                             | Cons                                |
 |----------------------------------|-------------------------------------|
@@ -265,4 +268,5 @@ in this repo.
 the contents of `__proto__` for both object is empty. An open action item is to
 research how the relationship is actually implemented between `LastYear` and
 `NewYear`.
+
 ---
