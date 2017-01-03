@@ -142,7 +142,7 @@ NewYear1.greet();
 | Clear and concise code           | In ES6 Class is a leaky abstraction which uses ES5-style prototypal inheritance  |
 
 ####Commentary
-1. A working version can be found on [CodePen](https://goo.gl/0BAeNr)
+1. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
 2. Thanks to <a href="https://github.com/Kornil">@kornil</a> for providing this example.
 ---
 <a name="es5singletonexample"/>
