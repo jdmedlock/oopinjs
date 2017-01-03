@@ -143,7 +143,7 @@ NewYear1.greet();
 
 ####Commentary
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
-2. Thanks to <a href="https://github.com/Kornil">@kornil</a> for providing this example.
+2. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
 ---
 <a name="es5singletonexample"/>
 ###ES5 Singleton Object Example
@@ -199,11 +199,11 @@ console.log(newYear1.__proto__);
 ####Commentary
 1. The source code is [es5singleton.js](https://github.com/jdmedlock/oopinjs/blob/master/es5singleton.js)
 in this repo.
-2. It is important to note that newYear1 uses the greetMore() function, but the
+2. It is important to note that `newYear1` uses the `greetMore()` function, but the
 data used is always from the referencing object. This is why the invocation on
-the lastYear1 object produces different results from that of the newYear1
+the `lastYear1` object produces different results from that of the `newYear1`
 object.
-3. The greetMore function only exists in LastYear. NewYear references this
+3. The `greetMore` function only exists in `LastYear`. NewYear references this
 method.
 ---
 <a name="es6singletonexample"/>
@@ -262,7 +262,7 @@ console.log(newYear1.__proto__);
 1. The source code is [es6singleton.js](https://github.com/jdmedlock/oopinjs/blob/master/es6singleton.js)
 in this repo.
 2. Notice that while the output of this is the same as it's ES5 counterpart,
-the contents of __proto__ for both object is empty. An open action item is to
-research how the relationship is actually implemented between LastYear and
-NewYear.
+the contents of `__proto__` for both object is empty. An open action item is to
+research how the relationship is actually implemented between `LastYear` and
+`NewYear`.
 ---
