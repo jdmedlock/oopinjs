@@ -50,8 +50,9 @@ This is an "open source" reference and as such your contributions are welcomed
 and encouraged. The guidelines for contributing are:
 
 1. Follow the format used for the first recipe. Don't post just code - include
-your pros, cons, and your observations about the implementation. It's okay to
-make qualitative  in addition to quantitative observations.
+a description of what the recipe does, as well as its pros, cons, and your
+observations about the implementation. It's okay to make qualitative  in
+addition to quantitative observations.
 2. Tailor the code snippet in the first recipe for any new recipes. This will
 maintain consistency and more importantly, will make it easier to compare and
 contrast competing recipes.
@@ -64,6 +65,8 @@ contrast competing recipes.
 ---
 <a name="es6classexample"/>
 ###ES6 Class Example
+####Description
+Demonstrate how to use the *class* and constructor new to ES6.
 ####Javascript
 ```javascript
 'use strict'
@@ -136,8 +139,6 @@ NewYear1.greet();
 | Pros                             | Cons                                |
 |----------------------------------|-------------------------------------|
 | Clear and concise code           | In ES6 Class is a leaky abstraction which uses ES5-style prototypal inheritance  |
-|                                  |                                     |
-
 
 ####Commentary
 1. A working version can be found on [CodePen](https://goo.gl/0BAeNr)
@@ -145,6 +146,10 @@ NewYear1.greet();
 ---
 <a name="es5singletonexample"/>
 ###ES5 Singleton Object Example
+####Description
+Demonstrate a solution for creating singleton object instances using ES5
+prototypes. A [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is
+an object that has one and only one instance in an application.
 ####Javascript
 ```javascript
 'use strict'
@@ -161,7 +166,7 @@ LastYear.prototype.greetMore = function () {
 // Create the NewYear object. Note that the greetMore function is from
 // the LastYear class
 function NewYear(x, y) {
-	this._super = LastYear;				//
+	this._super = LastYear;				
 	this._super.call(this, x, y);
 	this.greetMore = LastYear.prototype.greetMore;
 }
@@ -189,7 +194,6 @@ console.log(newYear1.__proto__);
 |----------------------------------|-------------------------------------|
 | Supported in virtually all browsers | Code is lengthy and not concise  |
 |                                  | Code is unintuitive to the novice   |
-
 
 ####Commentary
 1. The source code is [es5singleton.js](https://github.com/jdmedlock/oopinjs/blob/master/es5singleton.js)
