@@ -288,34 +288,32 @@ instantiated.
 ####Javascript
 ```javascript
 'use strict'
-// Singleton creation using ES6-style prototypes
+// Parent-Child object relationship example
 
 class Year {
 	constructor(year){
 		this.year = year;
 		const monthAttributes = [
-			{no: 1, name: "January",  noDays: 31},
-			{no: 2, name: "February",  noDays: 28},
-			{no: 3, name: "March",  noDays: 31},
-			{no: 4, name: "April",  noDays: 30},
-			{no: 5, name: "May",  noDays: 31},
-			{no: 6, name: "June",  noDays: 30},
-			{no: 7, name: "July",  noDays: 31},
-			{no: 8, name: "August",  noDays: 31},
-			{no: 9, name: "September", noDays: 30},
-			{no: 10, name: "October",  noDays: 31},
-			{no: 11, name: "November",  noDays: 31},
-			{no: 12, name: "December",  noDays: 31},
-		];
+			{name: "January",  noDays: 31},
+			{name: "February",  noDays: 28},
+			{name: "March",  noDays: 31},
+			{name: "April",  noDays: 30},
+			{name: "May",  noDays: 31},
+			{name: "June",  noDays: 30},
+			{name: "July",  noDays: 31},
+			{name: "August",  noDays: 31},
+			{name: "September", noDays: 30},
+			{name: "October",  noDays: 31},
+			{name: "November",  noDays: 31},
+			{name: "December",  noDays: 31}		];
 
 		// Adjust the number of days in February for leap years
 		if (this.year % 4 === 0) {
 			monthAttributes[1].noDays = 29;
 		}
 		// Create an array of initialized Month objects
-		this.monthsInYear = [];
-		monthAttributes.forEach( (month, monthIndex) => {
-			this.monthsInYear[monthIndex] = new Month(this.year, month.no, month.name, month.noDays);
+		this.monthsInYear = monthAttributes.map( (month, monthIndex) => {
+			return new Month(this.year, monthIndex, month.name, month.noDays);
 		});
 	}
 
@@ -335,34 +333,35 @@ class Month {
 		this.number = monthNo;
 		this.name = monthName;
 		this.noDays = noDaysInMonth;
-		const firstDate = new Date(this.year, this.number, 1)
+		const firstDate = new Date(this.year, this.number, 1);
 		const firstDay = firstDate.getDay();
-		this.daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-		this.firstDayName = this.daysOfWeek[firstDay];
+		const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		this.firstDayName = daysOfWeek[firstDay];
+		console.log(year, monthNo, monthName, noDaysInMonth, firstDate, firstDay);
 	}
 
 	toString() {
 		let resultString = this.year + "," + this.number + "," +
 					   this.name + "," + this.noDays + "," +
-					   this.firstDayName
+					   this.firstDayName +" / "
 		return resultString;
 	}
 }
 
 // Create a new object instance for a year
-var currentYear = new Year(2017);
 var lastYear = new Year(2016);
+var currentYear = new Year(2017);
 
 // Display the contents of each of the object instances
-console.log("currentYear object = ", currentYear.toString());
 console.log("lastYear object = ", lastYear.toString());
+console.log("currentYear object = ", currentYear.toString());
 ```
 
 ####Pros/cons
 | Pros                             | Cons                                |
 |----------------------------------|-------------------------------------|
-| Concise and intuitive code       | ES6 not available in all browsers. Transpilers like Babel may be used to circumvent this issue.  |
-|    | Using an array in the parent object to contain references to child objects works well with a limited number of child obects. However, this is impactful on both memory and the execution time of the contructor function for very large numbers of child objects |
+| Concise and intuitive code       | ES6 not available in all browsers. Transpilers like Babel may be used to circumvent this issue.|
+|                                  | Using an array in the parent object to contain references to child objects works well with a limited number of child obects. However, this is impactful on both memory and the execution time of the contructor function for very large numbers of child objects |
 
 ####Commentary
 1. The source code is [es6singleton.js](https://github.com/jdmedlock/oopinjs/blob/master/es6singleton.js)
