@@ -66,3 +66,11 @@ var currentYear = new Year(2017);
 // Display the contents of each of the object instances
 console.log("lastYear object = ", lastYear.toString());
 console.log("currentYear object = ", currentYear.toString());
+
+console.log("\nlastYear object = ", JSON.stringify(lastYear));
+console.log("currentYear object = ", JSON.stringify(currentYear));
+
+console.log("\nPrototype of lastYear is: ", Object.getPrototypeOf(lastYear));
+console.log("Descriptors of lastYear are: ", Object.getOwnPropertyDescriptors(lastYear));
+console.log("Prototype of currentYear is: ", Object.getPrototypeOf(currentYear));
+console.log("Descriptors of currentYear are: ", Object.getOwnPropertyDescriptors(currentYear));
