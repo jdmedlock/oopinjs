@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Contributing](#contributing)
 - [OOP Recipes](#ooprecipes)
+  - [ES5 Class Example](#es5classexample)
   - [ES6 Class Example](#es6classexample)
   - [ES5 Singleton Example](#es5singletonexample)
   - [ES6 Singleton Example](#es6singletonexample)
@@ -64,6 +65,64 @@ contrast competing recipes.
 
 <a name="ooprecipes"/>
 ##OOP Recipes
+
+---
+
+<a name="es5classexample"/>
+###ES5 Class Example
+####Description
+Demonstrate how to use prototypes in ES5 to implement inheritance between
+prototypes and object instances.
+####Javascript
+```javascript
+'use strict'
+
+// ES5-style classless OOP example
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+function Last_year() {
+}
+
+// Define the greetMore method and attach it to the Last_Year prototype
+Last_year.prototype.greetMore = function(){
+  console.log("hello "+this.x+"!!")
+}
+
+function New_year(x,y){
+  this.x = x;
+  this.y = y;
+}
+
+// Force New_Year to inherit from the Last_year prototype
+New_year.prototype = Object.create( Last_year.prototype );
+
+// Define the greet method and attach it to the New_year object
+New_year.prototype.greet = function(){
+  console.log("yo "+this.y+"!!");
+}
+
+// Create an instance of the New_year object. Recall that since New_year
+// inherits from Last_year this new object instance has access to the
+// greetMore method on the Last_year prototype, as well as to the greet
+// method on the New_year prototype.
+var newYear2 = new New_year("John","Jane");
+
+// Since the new object instance has access to the methods associated with
+// its prototypes these methods can be invoked on its namespace.
+newYear2.greetMore();
+newYear2.greet();
+console.log("Prototype of newYear2 is: ", Object.getPrototypeOf(newYear2));
+console.log("Descriptors of newYear2 are: ", Object.getOwnPropertyDescriptors(newYear2));
+```
+####Pros/cons
+| Pros                             | Cons                                |
+|----------------------------------|-------------------------------------|
+| Clear and concise code           | Slightly more code required than is the case using ES6-style 'class'  |
+
+####Commentary
+1. The source code is [es5class.js](https://github.com/jdmedlock/oopinjs/blob/master/es5class.js)
+in this repo.
+2. Thanks to [@kornil](https://github.com/Kornil) for providing the original
+idea and source for this example.
 
 ---
 
@@ -149,7 +208,6 @@ NewYear1.greet();
 2. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
 
 ---
-
 <a name="es5singletonexample"/>
 ###ES5 Singleton Object Example
 ####Description
