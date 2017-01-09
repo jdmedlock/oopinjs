@@ -119,9 +119,10 @@ console.log("Descriptors of newYear2 are: ", Object.getOwnPropertyDescriptors(ne
 | Clear and concise code           | Slightly more code required than is the case using ES6-style 'class'  |
 
 ####Commentary
-1. The source code is [es5class.js](https://github.com/jdmedlock/oopinjs/blob/master/es5class.js)
+1. The [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript) recommends that ES6 classes be used over prototype manipulation due to their conciseness and clarity.
+2. The source code is [es5class.js](https://github.com/jdmedlock/oopinjs/blob/master/es5class.js)
 in this repo.
-2. Thanks to [@kornil](https://github.com/Kornil) for providing the original
+3. Thanks to [@kornil](https://github.com/Kornil) for providing the original
 idea and source for this example.
 
 ---
@@ -204,8 +205,9 @@ NewYear1.greet();
 | Clear and concise code           | In ES6 Class is a leaky abstraction which uses ES5-style prototypal inheritance  |
 
 ####Commentary
-1. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
-2. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
+1. The [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript) recommends that ES6 classes be used over prototype manipulation due to their conciseness and clarity.
+2. A working version can be found on [CodePen](https://goo.gl/0BAeNr).
+3. Thanks to [@kornil](https://github.com/Kornil) for providing this example.
 
 ---
 <a name="es5singletonexample"/>
